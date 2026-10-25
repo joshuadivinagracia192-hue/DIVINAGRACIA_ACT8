@@ -1,0 +1,273 @@
+/* Palette (HTML colors)
+   Black:        #0D0F11
+   Grays:        #171A1D, #20252A, #2A2F33, #4A5258, #8A9399, #D0D5D8, #E3E7E9
+   Greens:       #17503E (dark), #3FA37A (medium), #5CC49A (light)
+   Blues:        #12263A (navy), #3A7CA5 (medium), #7DB7E0 (light)
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 24px;
+  background-color: #0D0F11;
+  color: #D0D5D8;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+#page {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 24px;
+  background-color: #171A1D;
+  border: 5px solid #3FA37A;
+  border-radius: 20px;
+}
+
+/* Hero and banner image */
+.hero {
+  padding: 36px 24px;
+  background-color: #12263A;
+  color: #D0D5D8;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #3A7CA5;
+  border-radius: 14px;
+  text-align: center;
+}
+
+.hero h1 {
+  margin: 0 0 8px 0;
+  font-size: 42px;
+  font-weight: 700;
+  color: #5CC49A;
+}
+
+.hero h2 {
+  margin: 0 0 12px 0;
+  font-size: 20px;
+  font-weight: 400;
+  color: #7DB7E0;
+}
+
+.hero p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.banner {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 16px 0 0 0;
+  border: 3px solid #3FA37A;
+  border-radius: 14px;
+}
+
+/* Menu */
+.menu {
+  margin: 0 0 16px 0;
+  padding: 8px;
+  background-color: #0D0F11;
+  border: 2px solid #4A5258;
+  border-radius: 12px;
+}
+
+.menu-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menu-link {
+  display: block;
+  padding: 8px 16px;
+  color: #E3E7E9;
+  background-color: #2A2F33;
+  border: 2px solid #4A5258;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.menu-link.active {
+  color: #0D0F11;
+  background-color: #3FA37A;
+  border-color: #5CC49A;
+}
+
+/* Cards and dividers */
+.card {
+  padding: 20px 24px;
+  background-color: #20252A;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #4A5258;
+  border-top-style: solid;
+  border-top-width: 8px;
+  border-top-color: #3A7CA5;
+  border-radius: 12px;
+}
+
+.card h3 {
+  margin: 0 0 10px 0;
+  font-size: 26px;
+  font-weight: 700;
+  color: #E3E7E9;
+}
+
+.card h4 {
+  margin: 16px 0 6px 0;
+  font-size: 19px;
+  font-weight: 700;
+  color: #7DB7E0;
+}
+
+.card h5 {
+  margin: 0 0 4px 0;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.card h6 {
+  margin: 14px 0 0 0;
+  font-size: 15px;
+  font-weight: 400;
+  color: #5CC49A;
+}
+.photo {
+  display: block;
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  margin: 0 auto 14px auto;
+  border: 3px solid #3FA37A;
+  border-radius: 12px;
+}
+
+.card p {
+  margin: 0 0 12px 0;
+  line-height: 1.6;
+}
+
+.divider {
+  margin: 20px 0;
+  border: none;
+  border-top-style: dotted;
+  border-top-width: 4px;
+  border-top-color: #4A5258;
+}
+
+.highlight {
+  background-color: #1B2B2A;
+  border-top-color: #3FA37A;
+}
+
+.note {
+  padding: 10px 14px;
+  background-color: #12263A;
+  border: 2px dashed #3FA37A;
+  border-radius: 8px;
+  color: #E3E7E9;
+  font-weight: 700;
+}
+
+/* Lists */
+.fav-list {
+  margin: 0;
+  padding-left: 26px;
+  line-height: 1.9;
+}
+
+.fav-list li {
+  padding-left: 4px;
+}
+
+.text-link {
+  color: #7DB7E0;
+  font-weight: 700;
+}
+
+/* Color swatches (these show my favorite colors) */
+.swatch-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.swatch {
+  flex: 1 1 160px;
+  padding: 18px 14px;
+  border: 3px solid #8A9399;
+  border-radius: 10px;
+}
+
+.swatch p {
+  margin: 0;
+}
+
+#swatch-green {
+  background-color: #9CAF88;
+  color: #2F3E4E;
+}
+
+#swatch-blue {
+  background-color: #2F3E4E;
+  color: #DADFDD;
+}
+
+#swatch-gray {
+  background-color: #DADFDD;
+  color: #2F3E4E;
+}
+
+/* Quote */
+.quote {
+  padding: 16px 18px;
+  background-color: #12263A;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #4A5258;
+  border-top-style: dashed;
+  border-top-color: #5CC49A;
+  border-radius: 10px;
+  color: #E3E7E9;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 1.7;
+}
+
+/* Footer */
+.footer {
+  padding: 16px;
+  background-color: #0D0F11;
+  color: #D0D5D8;
+  border: 2px solid #3A7CA5;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+@media (max-width: 480px) {
+  body { padding: 10px; }
+  #page { padding: 14px; }
+  .hero h1 { font-size: 32px; }
+}
